@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Валерий Мащенко](https://up.htmlacademy.ru/adaptive/31/user/2491895).
-* Наставник: `Антон Варнавский`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
