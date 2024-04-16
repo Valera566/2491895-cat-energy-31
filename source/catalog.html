@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <img class="main-header__logo-image main-header__logo--text" src="#" width="154" height="64" alt="Логотип Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link " href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="catalog-container">
+    <h1 class="catalog-title">Каталог продукции</h1>
+    <section class="catalog-products">
+      <h2 class="visually-hidden">Каталог</h2>
+      <article class="catalog-products__item cards">
+        <a class="cards__link" href="#">
+          <img src="#" width="68" height="86" alt="Cat Energy с курицей">
+        </a>
+        <div class="cards__text">
+          <a class="cards__link-text" href="#">
+            <h3 class="cards__title">Cat Energy pro 500 г</h3>
+          </a>
+          <dl class="cards__description">
+            <dt class="cards__text">Масса</dt>
+            <dd class="cards__value">500 г</dd>
+            <dt class="cards__text">Вкус</dt>
+            <dd class="cards__value">Курица</dd>
+            <dt class="cards__text">Цена</dt>
+            <dd class="cards__value">700 р.</dd>
+          </dl>
+        </div>
+        <a class="cards__button button" href="#">Заказать</a>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
