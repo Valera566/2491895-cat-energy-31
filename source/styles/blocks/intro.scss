@@ -1,0 +1,20 @@
+.intro {
+  font-family: $secondary-font;
+  text-align: center;
+  color: $base-white;
+}
+
+.intro__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.intro__slogan {
+  line-height: 14px;
+}
+
+.intro__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-white;
+}
