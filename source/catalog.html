@@ -6,6 +6,10 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -37,7 +41,7 @@
     </nav>
   </header>
   <main class="catalog-container">
-    <h1 class="catalog-title">Каталог продукции</h1>
+    <h1 class="catalog-container__title">Каталог продукции</h1>
     <section class="catalog-products">
       <h2 class="visually-hidden">Каталог</h2>
       <article class="catalog-products__item cards">
@@ -68,7 +72,6 @@
       </article>
       <article class="catalog-products__item cards">
         <a class="cards__link" href="#">
-
           <picture>
             <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/catalog/chicken-1000-desktop@1x.png 1x, images/catalog/chicken-1000-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/catalog/chicken-1000-tablet@1x.png 1x, images/catalog/chicken-1000-tablet@2x.png 2x">
