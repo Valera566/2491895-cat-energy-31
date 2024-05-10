@@ -8,3 +8,39 @@
 .advantages__text {
   color: $base-color-text;
 }
+
+.advantages__item--leaf::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#sheet");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__item--glass::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#glass");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__item--knife::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#fork-knife");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__item--clock::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#clock");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
