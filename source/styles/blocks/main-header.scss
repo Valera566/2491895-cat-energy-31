@@ -1,0 +1,22 @@
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    width: 704px;
+    margin: 0 auto;
+  }
+
+  .main-header__logo {
+    width: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1220px;
+  }
+
+  .main-header__logo {
+    width: 202px;
+  }
+}

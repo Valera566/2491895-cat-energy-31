@@ -8,6 +8,7 @@
 .intro__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .intro__slogan {
@@ -18,4 +19,10 @@
   font-size: 16px;
   line-height: 20px;
   color: $base-white;
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    display: flex;
+  }
 }
