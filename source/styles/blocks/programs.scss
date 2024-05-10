@@ -6,6 +6,7 @@
   color: $base-black;
 }
 
+
 .programs__description {
   color: $base-color-text;
 }
@@ -17,4 +18,32 @@
   text-transform: uppercase;
   text-align: center;
   color: $base-black;
+}
+
+.programs__item--slim::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+}
+
+.programs__item--pro::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+}
+
+.programs__link::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 12px;
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-repeat: no-repeat;
+  background-color: $base-black;
 }
