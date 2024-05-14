@@ -50,7 +50,7 @@
   background-color: $base-black;
 }
 
-.programs__wrapper {
+.programs {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -62,12 +62,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .programs__wrapper {
+  .programs {
     gap: 30px;
   }
 
   .programs__item {
-    grid-template-columns: 340px auto;
+    grid-template-columns: 1fr auto;
   }
 
   .programs__item--slim::before {
@@ -90,5 +90,36 @@
 
   .programs__link {
     grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .programs__item {
+    grid-template-columns: auto 1fr;
+  }
+
+  .programs__description {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .programs__link {
+    grid-row: 3 / 4;
+  }
+
+  .programs__item--slim::before {
+    grid-column: 1 / 2;
+    width: 100px;
+    height: 106px;
+  }
+
+  .programs__item--pro::before {
+    grid-column: 1 / 2;
+    width: 134px;
+    height: 100px;
   }
 }

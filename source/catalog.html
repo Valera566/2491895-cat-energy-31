@@ -15,18 +15,20 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo-desktop.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/index/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/index/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <img class="main-header__logo-text" src="images/index/logo-text.svg" width="101" height="18" alt="Название Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/index/logo-tablet.svg">
+          <img class="main-header__logo-image" src="images/index/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <img class="main-header__logo-text" src="images/index/logo-text.svg" width="101" height="18" alt="Название Cat Energy">
+      </a>
+      <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-header__nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link " href="index.html">Главная</a>
@@ -280,8 +282,8 @@
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <address class="contacts__address">
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
           <p class="contacts__address-city">Санкт-Петербург</p>
         </address>
       </div>
@@ -295,21 +297,31 @@
     </section>
     <footer class="main-footer social">
       <a class="main-footer__logo" href="#">
-        <img src="#" width="128" height="24" alt="Логотип Cat Energy">
+        <img class="main-footer__logo-image" src="images/index/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
       </a>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Telegram</span></a>
+          <a class="social__link social__link--telegram" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
         </li>
       </ul>
-      <a class="main-footer__link" href="https://htmlacademy.ru">HTML Academy</a>
-      <a class="main-footer__logo-html" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип HTML Academy</span></a>
+      <div class="main-footer__copyright">
+        <a class="main-footer__link" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="main-footer__logo-html" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Логотип HTML Academy</span>
+        </a>
+      </div>
     </footer>
   </main>
 </body>

@@ -1,6 +1,10 @@
 .intro {
-  font-family: $secondary-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-family: $secondary-font;
   color: $base-white;
   background-color: $base-green;
 }
@@ -19,10 +23,38 @@
   font-size: 16px;
   line-height: 20px;
   color: $base-white;
+  background-color: $base-green;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: 92%;
+    margin: 0 auto;
+    background-color: $base-white;
+    color: $base-black;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .intro__title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .intro__slogan {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .intro__image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    object-fit: cover;
   }
 }

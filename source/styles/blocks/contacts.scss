@@ -9,4 +9,10 @@
 .contacts__address {
   line-height: 20px;
   font-style: normal;
+  text-align: right;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
