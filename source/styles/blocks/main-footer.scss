@@ -7,3 +7,27 @@
   width: 27px;
   height: 34px;
 }
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    flex-direction: row;
+  }
+
+  .main-footer__copyright {
+    width: 168px;
+  }
+}

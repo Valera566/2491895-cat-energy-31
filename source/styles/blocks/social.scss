@@ -36,3 +36,13 @@
     height: 17px;
   }
 }
+
+.social__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 41%;
+}

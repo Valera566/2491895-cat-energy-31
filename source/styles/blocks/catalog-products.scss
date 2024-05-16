@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .catalog-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

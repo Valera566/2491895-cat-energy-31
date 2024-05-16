@@ -6,9 +6,11 @@
 }
 
 .subscription__text {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 24px;
   color: $base-black;
+  text-align: center;
 }
 
 .subscription__button {
@@ -17,4 +19,34 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $base-white;
+}
+
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription__input {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .subscription__form {
+    display: flex;
+    flex-direction: row;
+    width: 82%;
+    margin: 0 auto;
+  }
+
+  .subscription__input {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscription__form {
+    width: 52%;
+  }
 }

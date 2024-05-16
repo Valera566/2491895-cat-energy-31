@@ -6,9 +6,9 @@
   color: $base-black;
 }
 
-
 .programs__description {
   color: $base-color-text;
+  grid-column: 1 / -1;
 }
 
 .programs__link {
@@ -18,6 +18,8 @@
   text-transform: uppercase;
   text-align: center;
   color: $base-black;
+  grid-column: 1 / -1;
+  justify-self: start;
 }
 
 .programs__item--slim::before {
@@ -46,4 +48,78 @@
   mask-image: url("../../icons/stack.svg#arrow");
   mask-repeat: no-repeat;
   background-color: $base-black;
+}
+
+.programs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.programs__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    gap: 30px;
+  }
+
+  .programs__item {
+    grid-template-columns: 1fr auto;
+  }
+
+  .programs__item--slim::before {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programs__item--pro::before {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    width: 268px;
+    height: 200px;
+  }
+
+  .programs__description {
+    grid-column: 1 / 2;
+  }
+
+  .programs__link {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .programs__item {
+    grid-template-columns: auto 1fr;
+  }
+
+  .programs__description {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .programs__link {
+    grid-row: 3 / 4;
+  }
+
+  .programs__item--slim::before {
+    grid-column: 1 / 2;
+    width: 100px;
+    height: 106px;
+  }
+
+  .programs__item--pro::before {
+    grid-column: 1 / 2;
+    width: 134px;
+    height: 100px;
+  }
 }

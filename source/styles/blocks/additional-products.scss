@@ -1,3 +1,15 @@
+.additional-products__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .additional-products__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -11,6 +23,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  grid-column: 1 / -1;
 }
 
 .additional-products__description {
@@ -21,6 +34,7 @@
 .additional-products__price {
   line-height: 14px;
   color: $base-color-text;
+  text-align: end;
 }
 
 .additional-products__button {
@@ -28,14 +42,21 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $base-white;
+  background-color: $base-green;
+  grid-column: 1 / -1;
+}
+
+.additional-products__promo {
+  background-color: $base-green;
 }
 
 .additional-products__text {
   font-size: 16;
   line-height: 20px;
   color: $base-white;
-  background-color: $base-green;
+  text-align: center;
 }
 
 .additional-products__text::before {
@@ -47,4 +68,63 @@
   background-color: $base-white;
   width: 78px;
   height: 80px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products__item {
+    grid-template-columns: 1fr repeat(2, auto);
+  }
+
+  .additional-products__name {
+    grid-column: 1 / 2;
+  }
+
+  .additional-products__price {
+    min-width: 89px;
+  }
+
+  .additional-products__promo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+  }
+
+  .additional-products__text {
+    width: 161px;
+    text-align: left;
+  }
+
+  .additional-products__text::before {
+    width: 80px;
+    height: 82px;
+    position: absolute;
+    top: 10px;
+    left: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    display: grid;
+    grid-template-columns: 894px 245px;
+    column-gap: 80px;
+  }
+
+  .additional-products__list {
+    grid-column: 1 / 2;
+  }
+
+  .additional-products__item {
+    grid-template-columns: 324px 247px 81px auto;
+  }
+
+  .additional-products__button {
+    grid-column: 4 / 5;
+  }
+
+  .additional-products__price {
+    text-align: left;
+  }
 }
