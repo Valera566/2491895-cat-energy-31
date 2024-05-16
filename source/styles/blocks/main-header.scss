@@ -8,16 +8,13 @@
   align-items: center;
   width: 87%;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 
-.main-header__toggle {
-  mask-image: url("../../icons/stack.svg#tile");
-  mask-repeat: no-repeat;
-  mask-size: 24px 24px;
-  background-color: $base-black;
-  width: 24px;
-  height: 24px;
-  border: none;
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
 }
 
 @media (min-width: $tablet-width) {

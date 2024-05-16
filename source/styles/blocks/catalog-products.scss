@@ -5,3 +5,9 @@
     gap: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

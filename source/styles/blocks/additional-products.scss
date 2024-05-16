@@ -1,6 +1,7 @@
 .additional-products__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .additional-products__list {
@@ -104,3 +105,26 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .additional-products {
+    display: grid;
+    grid-template-columns: 894px 245px;
+    column-gap: 80px;
+  }
+
+  .additional-products__list {
+    grid-column: 1 / 2;
+  }
+
+  .additional-products__item {
+    grid-template-columns: 324px 247px 81px auto;
+  }
+
+  .additional-products__button {
+    grid-column: 4 / 5;
+  }
+
+  .additional-products__price {
+    text-align: left;
+  }
+}
