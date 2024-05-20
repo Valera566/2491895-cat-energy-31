@@ -1,48 +1,103 @@
 .intro {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: $secondary-font;
   color: $base-white;
   background-color: $base-green;
+  position: relative;
 }
 
 .intro__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .intro__slogan {
   line-height: 14px;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.intro__image {
+  margin: 0 auto;
 }
 
 .intro__link {
   font-size: 16px;
   line-height: 20px;
-  color: $base-white;
-  background-color: $base-green;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    width: 92%;
-    margin: 0 auto;
     background-color: $base-white;
     color: $base-black;
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 120px;
+    padding-top: 65px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 70%;
+    text-align: start;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__link {
+    position: absolute;
+    top: 306px;
+    left: 120px;
+    margin: 0;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .intro__image {
+    width: 709px;
+    height: 609px;
+    margin-top: -6px;
+    margin-left: 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 134px;
+  }
+
+  .intro__wrapper {
+    padding-left: 190px;
+    padding-top: 110px;
   }
 
   .intro__title {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 40px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -50,11 +105,22 @@
   .intro__slogan {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-bottom: 52px;
   }
 
   .intro__image {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    object-fit: cover;
+    width: 552px;
+    height: 499px;
+    margin-left: -154px;
+    margin-top: 29px;
+  }
+
+  .intro__link {
+    position: static;
+    width: 244px;
+    margin-left: 190px;
+    grid-column: 1 / 2;
   }
 }

@@ -38,11 +38,22 @@
 }
 
 .social__list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
-  width: 41%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    border: none;
+  }
 }
