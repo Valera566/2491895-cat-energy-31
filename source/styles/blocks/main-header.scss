@@ -42,6 +42,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    width: $desktop-width;
+  }
+
   .main-header__logo {
     padding-top: 55px;
     padding-left: 110px;

@@ -1,11 +1,13 @@
 .main-footer {
+  background-color: #f2f2f2;
+}
+
+.main-footer__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   padding: 20px;
-  background-color: #f2f2f2;
 }
-
 
 .main-footer__logo-html {
   display: block;
@@ -40,6 +42,10 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
+    padding: 0;
+  }
+
+  .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 55px 30px;
@@ -53,6 +59,11 @@
 
 @media (min-width: $desktop-width) {
   .main-footer {
+    padding: 0;
+  }
+
+  .main-footer__wrapper {
     padding: 66px 110px;
   }
 }
+

@@ -136,6 +136,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     padding: 0 110px;
+    width: $desktop-width;
+    margin: 0 auto;
   }
 
   .programs__item {

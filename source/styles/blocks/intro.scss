@@ -6,8 +6,17 @@
   text-align: center;
   font-family: $secondary-font;
   color: $base-white;
-  background-color: $base-green;
-  position: relative;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85) 100%, #68b738),
+    image-set(url("../../images/index/index-background-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/index/index-background-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/index/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/index/index-background-mobile@2x.jpg") type("image/jpeg") 2x),
+    linear-gradient(to right, #504f55, #424247);
+  background-size: 100% 302px, 320px 302px, 100% 302px;
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  min-width: 320px;
 }
 
 .intro__title {
@@ -39,16 +48,10 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    background-color: $base-white;
     color: $base-black;
-  }
-
-  .intro__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding-left: 120px;
-    padding-top: 65px;
+    background-image: none;
   }
 
   .intro__title {
@@ -56,28 +59,33 @@
     line-height: 60px;
     width: 70%;
     text-align: start;
+    align-self: start;
+    padding-left: 120px;
   }
 
   .intro__slogan {
     font-size: 20px;
     line-height: 20px;
+    align-self: start;
+    padding-left: 120px;
   }
 
   .intro__link {
-    position: absolute;
-    top: 306px;
-    left: 120px;
     margin: 0;
     padding: 14px 26px;
     font-size: 20px;
     line-height: 26px;
+    min-width: 244px;
+    margin-left: 120px;
+    align-self: start;
+    z-index: 1;
   }
 
   .intro__image {
     width: 709px;
     height: 609px;
-    margin-top: -6px;
-    margin-left: 26px;
+    order: 4;
+    margin-top: -83px;
   }
 }
 
@@ -85,8 +93,28 @@
   .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    margin: 0 auto;
     margin-bottom: 134px;
+    width: $desktop-width;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        image-set(url("../../images/index/index-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/index/index-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/index/index-background-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/index/index-background-desktop@2x.jpg") type("image/jpeg") 2x),
+        linear-gradient(#3c3c41, #3c3c41);
+      background-repeat: no-repeat;
+      background-size: 100%, auto 694px;
+      width: 50%;
+      min-height: 694px;
+      top: 0;
+      right: 0;
+    }
   }
 
   .intro__wrapper {
@@ -96,21 +124,24 @@
 
   .intro__title {
     width: 100%;
-    padding-top: 0;
     padding-bottom: 40px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    padding-left: 190px;
+    padding-top: 110px;
   }
 
   .intro__slogan {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     padding-bottom: 52px;
+    padding-left: 190px;
+    text-align: left;
   }
 
   .intro__image {
     grid-column: 2 / 3;
-    grid-row: 1 / 4;
+    grid-row: 1 / 7;
     width: 552px;
     height: 499px;
     margin-left: -154px;

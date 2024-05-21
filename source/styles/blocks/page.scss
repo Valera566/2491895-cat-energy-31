@@ -1,9 +1,3 @@
 .page__body {
   margin: 0 auto;
 }
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    max-width: $desktop-width;
-  }
-}

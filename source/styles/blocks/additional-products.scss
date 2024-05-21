@@ -63,17 +63,15 @@
 
 .additional-products__promo {
   background-image:
-    url("../../icons/stack.svg#present"),
     linear-gradient(to bottom, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)),
     image-set(url("../../images/catalog/background-cat-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/catalog/background-cat-mobile@2x.webp") type("image/webp") 2x,
     url("../../images/catalog/background-cat-mobile@1x.jpg") type("image/jpeg") 1x,
     url("../../images/catalog/background-cat-mobile@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
-  background-size: 78px 80px, cover, cover;
-  background-position: 50% 59px, 100%, 50%;
+  background-size: cover, cover;
+  background-position: 100%, 50%;
   min-height: 290px;
-  padding-top: 60px;
   margin-top: 35px;
 }
 
@@ -87,7 +85,18 @@
   color: $base-white;
   text-align: center;
   margin: 0;
-  padding: 0 60px;
+  padding: 59px 60px 0;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#present");
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -100,6 +109,10 @@
     line-height: 32px;
     padding-bottom: 80px;
     border-bottom: none;
+  }
+
+  .additional-products__list {
+    margin-bottom: 70px;
   }
 
   .additional-products__item {
@@ -123,7 +136,7 @@
   }
 
   .additional-products__price {
-    min-width: 89px;
+    min-width: 86px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -135,30 +148,46 @@
   }
 
   .additional-products__promo {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    background-image:
+      linear-gradient(to bottom, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)),
+      image-set(url("../../images/catalog/background-cat-tablet@1x.webp") type("image/webp") 1x,
+      url("../../images/catalog/background-cat-tablet@2x.webp") type("image/webp") 2x,
+      url("../../images/catalog/background-cat-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/catalog/background-cat-tablet@2x.jpg") type("image/jpeg") 2x);
+    background-size: cover, cover;
+    background-position: 100%, 50%;
+    min-height: 200px;
+    width: 100%;
+    margin-top: 0;
     position: relative;
-    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 50px 125px;
   }
 
   .additional-products__text {
     text-align: left;
-  }
+    width: 161px;
+    padding: 0;
 
-  .additional-products__text::before {
-    width: 80px;
-    height: 82px;
-    position: absolute;
-    top: 10px;
-    left: 78px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 82px;
+      top: 57px;
+      left: 77px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-products {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 896px 245px;
+    column-gap: 80px;
     padding: 0 110px 96px;
   }
 
@@ -168,11 +197,12 @@
 
   .additional-products__list {
     grid-column: 1 / 2;
+    margin-bottom: 0;
   }
 
   .additional-products__item {
     display: flex;
-    padding: 25px 1px 27px;
+    padding: 13px 0 18px;
     box-shadow: none;
     border-bottom: 1px solid #cdcdcd;
   }
@@ -197,6 +227,28 @@
   }
 
   .additional-products__promo {
-    margin-left: 81px;
+    background-image:
+      linear-gradient(to bottom, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)),
+      image-set(url("../../images/catalog/background-cat-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/catalog/background-cat-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/catalog/background-cat-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/catalog/background-cat-desktop@2x.jpg") type("image/jpeg") 2x);
+    background-size: cover, cover;
+    background-position: 100%, 50%;
+    min-height: 288px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .additional-products__text {
+    text-align: center;
+    gap: 46px;
+
+    &::before {
+      content: "";
+      position: static;
+      width: 80px;
+      height: 83px;
+    }
   }
 }

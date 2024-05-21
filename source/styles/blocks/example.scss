@@ -201,7 +201,7 @@
 
   .example__slider {
     grid-template-columns: 280px auto 280px;
-    padding-left: 104px;
+    padding-left: 74px;
   }
 
   .example__button {
@@ -211,11 +211,17 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    background-image: linear-gradient(to top, #f2f2f2 462px, $base-white 462px);
+    padding: 0;
+  }
+
+  .example__container {
     display: grid;
     grid-template-columns: 433px auto;
     column-gap: 224px;
     padding: 0 110px;
-    background-image: linear-gradient(to top, #f2f2f2 462px, $base-white 462px);
+    width: $desktop-width;
+    margin: 0 auto;
   }
 
   .example__wrapper {
