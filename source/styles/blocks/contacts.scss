@@ -59,6 +59,10 @@
   .contacts__address-city {
     padding-top: 19px;
   }
+
+  .contacts iframe {
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -69,6 +73,7 @@
     top: 95px;
     left: 110px;
     gap: 87px;
+    z-index: 1;
   }
 
   .contacts__address {

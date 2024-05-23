@@ -6,8 +6,9 @@
   .catalog-products {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 141px 60px;
     padding: 0 30px 74px;
+    margin-top: 80px;
   }
 
   .catalog-products__item {
@@ -17,8 +18,11 @@
 
 @media (min-width: $desktop-width) {
   .catalog-products {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     padding: 0 110px 71px;
-    gap: 63px 80px;
+    gap: 144px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 80px;
   }
 }

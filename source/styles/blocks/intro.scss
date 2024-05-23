@@ -44,6 +44,14 @@
   text-decoration: none;
   padding: 10px;
   margin: 0 20px;
+
+  &:hover {
+    background-color: $base-hover-button;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -95,7 +103,7 @@
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     margin-bottom: 134px;
-    width: $desktop-width;
+    max-width: 1440px;
 
     &::before {
       content: "";

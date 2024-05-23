@@ -45,12 +45,15 @@
   margin-top: 21px;
   padding: 10px 0;
   width: 100%;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .show-all {
     box-shadow: 0 0 0 2px #f2f2f2;
-    margin-top: 98px;
   }
 
   .show-all__title {
@@ -81,10 +84,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .show-all {
-    margin-top: 88px;
-  }
-
   .show-all__title {
     padding: 0;
 

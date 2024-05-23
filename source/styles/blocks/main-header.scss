@@ -15,6 +15,14 @@
   display: flex;
   align-items: center;
   gap: 56px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -28,11 +36,11 @@
   .main-header__wrapper {
     width: 25%;
     margin: 0;
+    padding-top: 25px;
+    padding-left: 30px;
   }
 
   .main-header__logo {
-    padding-top: 25px;
-    padding-left: 30px;
     gap: 13px;
   }
 
@@ -43,12 +51,15 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: $desktop-width;
+    max-width: 1440px;
+  }
+
+  .main-header__wrapper {
+    padding-top: 55px;
+    padding-left: 110px;
   }
 
   .main-header__logo {
-    padding-top: 55px;
-    padding-left: 110px;
     gap: 14px;
   }
 }

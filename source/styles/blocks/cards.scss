@@ -32,6 +32,15 @@
   line-height: 20px;
   grid-column: 1 / -1;
   padding: 10px 0;
+
+  &:hover {
+    background-color: $base-hover-button;
+  }
+
+  &:active {
+    background-color: $base-hover-button;
+    color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 .cards__link {
@@ -61,7 +70,11 @@
   .cards {
     grid-template-columns: 1fr;
     border-bottom: none;
-    background-image: linear-gradient(to top, #f2f2f2 430px, $base-white 430px);
+    background-color: #f2f2f2;
+  }
+
+  .cards__link {
+    margin-top: -80px;
   }
 
   .cards__list {
@@ -73,7 +86,7 @@
   }
 
   .cards__item {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $base-border;
     padding-bottom: 5px;
     margin-bottom: 7px;
   }
@@ -102,8 +115,13 @@
     padding: 0 38px 40px;
   }
 
+  .cards__link-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .cards__title {
-    padding: 0 15px;
+    padding: 0;
   }
 
   .cards__image {

@@ -9,6 +9,15 @@
     width: 27px;
     height: 17px;
   }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $base-green;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .social__link--youtube {
@@ -22,6 +31,15 @@
     width: 24px;
     height: 19px;
   }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $base-green;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .social__link--telegram {
@@ -34,6 +52,15 @@
     background-color: $base-color-icon;
     width: 20px;
     height: 17px;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $base-green;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
