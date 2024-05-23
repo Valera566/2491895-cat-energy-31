@@ -15,25 +15,33 @@
   display: flex;
   align-items: center;
   gap: 56px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 92%;
+    justify-content: space-between;
     margin: 0 auto;
-    margin-top: 25px;
   }
 
   .main-header__wrapper {
     width: 25%;
     margin: 0;
+    padding-top: 25px;
+    padding-left: 30px;
   }
 
-  .main-header__nav {
-    width: 63%;
+  .main-header__logo {
+    gap: 13px;
   }
 
   .main-header__toggle {
@@ -43,15 +51,15 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: 85%;
-    margin-top: 55px;
+    max-width: 1440px;
   }
 
   .main-header__wrapper {
-    width: 202px;
+    padding-top: 55px;
+    padding-left: 110px;
   }
 
-  .main-header__nav {
-    width: 35%;
+  .main-header__logo {
+    gap: 14px;
   }
 }

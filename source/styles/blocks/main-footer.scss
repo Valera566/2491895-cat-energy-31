@@ -1,33 +1,109 @@
-.main-footer__logo-html {
-  display: block;
-  mask-image: url("../../icons/stack.svg#html-academy");
-  mask-repeat: no-repeat;
-  mask-size: 27px 34px;
-  background-color: $base-color-icon;
-  width: 27px;
-  height: 34px;
+.main-footer {
+  background-color: #f2f2f2;
 }
 
-.main-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.main-footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
+  padding: 20px;
 }
 
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 92%;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.main-footer__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $base-color-text;
+  margin-top: 20px;
+
+  &:focus-visible .main-footer__htmlacademy::after {
+    background-color: $base-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__htmlacademy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &::after {
+    content: "";
+    display: block;
+    mask-image: url("../../icons/stack.svg#html-academy");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    background-color: $base-color-icon;
+    width: 27px;
+    height: 34px;
+  }
+
+  &:hover::after {
+    background-color: $base-green;
+  }
+}
+
+.main-footer__logo {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-footer {
-    flex-direction: row;
+    padding: 0;
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 30px;
   }
 
   .main-footer__copyright {
     width: 168px;
+    padding-top: 0;
+  }
+
+  .main-footer__link {
+    margin-top: 0;
+  }
+
+  .main-footer__htmlacademy {
+    gap: 23px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding: 0;
+  }
+
+  .main-footer__wrapper {
+    padding: 66px 110px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
