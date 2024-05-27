@@ -29,7 +29,9 @@
 }
 
 .intro__slogan {
+  font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   margin: 0;
   padding-bottom: 29px;
 }
@@ -44,6 +46,7 @@
   text-decoration: none;
   padding: 10px;
   margin: 0 20px;
+  margin-top: 2px;
 
   &:hover {
     background-color: $base-hover-button;
@@ -65,10 +68,12 @@
   .intro__title {
     font-size: 60px;
     line-height: 60px;
-    width: 70%;
+    width: 72%;
     text-align: start;
     align-self: start;
     padding-left: 120px;
+    padding-top: 66px;
+    padding-bottom: 40px;
   }
 
   .intro__slogan {
@@ -76,6 +81,7 @@
     line-height: 20px;
     align-self: start;
     padding-left: 120px;
+    padding-bottom: 49px;
   }
 
   .intro__link {

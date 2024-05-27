@@ -58,7 +58,7 @@
 .main-footer__logo {
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 
   &:hover {
     opacity: 0.8;
@@ -78,7 +78,7 @@
   .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding: 43px 30px;
   }
 
   .main-footer__copyright {
@@ -101,7 +101,7 @@
   }
 
   .main-footer__wrapper {
-    padding: 66px 110px;
+    padding: 52px 94px 52px 110px;
     max-width: 1440px;
     margin: 0 auto;
   }

@@ -8,11 +8,12 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 0;
   color: #222222;
   width: 65%;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 }
 
 .cards__list {
@@ -23,7 +24,7 @@
   line-height: 16px;
   color: $base-color-text;
   grid-column: 2 / 3;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 }
 
 .cards__button {
@@ -81,8 +82,8 @@
     grid-column: 1 / -1;
     font-size: 16px;
     line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 32px;
+    padding-top: 14px;
+    padding-bottom: 24px;
   }
 
   .cards__item {
@@ -101,7 +102,7 @@
 
   .cards__image {
     padding-top: 29px;
-    padding-bottom: 41px;
+    padding-bottom: 39px;
   }
 
   .cards__image-big {
@@ -115,6 +116,11 @@
     padding: 0 38px 40px;
   }
 
+  .cards__list {
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+
   .cards__link-text {
     width: 80%;
     margin: 0 auto;
@@ -125,6 +131,11 @@
   }
 
   .cards__image {
-    padding-bottom: 31px;
+    padding-bottom: 27px;
+  }
+
+  .cards__image-big {
+    padding-top: 17px;
+    padding-bottom: 16px;
   }
 }

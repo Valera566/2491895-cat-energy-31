@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 141px 60px;
-    padding: 0 30px 74px;
+    padding: 0 30px 76px;
     margin-top: 80px;
   }
 
@@ -18,8 +18,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-products {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    padding: 0 110px 71px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 245px));
+    padding: 0 0 71px 110px;
     gap: 144px 80px;
     max-width: 1440px;
     margin: 0 auto;

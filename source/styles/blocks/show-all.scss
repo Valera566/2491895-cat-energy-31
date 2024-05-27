@@ -7,6 +7,7 @@
 .show-all__title {
   font-family: $secondary-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
@@ -60,7 +61,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    padding: 0 30px;
+    padding: 0 40px;
 
     &::before {
       width: 60px;
@@ -93,7 +94,7 @@
   }
 
   .show-all__text {
-    padding: 23px 0 0;
+    padding: 27px 0 0;
   }
 
   .show-all__button {
