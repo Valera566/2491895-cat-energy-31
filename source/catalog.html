@@ -10,6 +10,9 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -314,11 +317,11 @@
           <img src="images/index/location-mobile@1x.png" width="320" height="362" srcset="images/index/location-mobile@2x.png 2x" alt="Место положение магазина на карте">
         </picture>
       </noscript>
-      <iframe class="partnership__map-yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c40ab8cc834ad5131302a3477414d73b42b08ef273393e483ae1275f68a1c34&amp;source=constructor" width="320" height="362" allowfullscreen="" title="Офис компании по адресу Большая Конюшенная, д. 19/8, г. Санкт-Петербург"></iframe>
+      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c40ab8cc834ad5131302a3477414d73b42b08ef273393e483ae1275f68a1c34&amp;source=constructor" width="320" height="362" allowfullscreen="" title="Офис компании по адресу Большая Конюшенная, д. 19/8, г. Санкт-Петербург"></iframe>
     </section>
     <footer class="main-footer social">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="#">
+        <a class="main-footer__logo" href="index.html">
           <img class="main-footer__logo-image" src="images/index/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
         <ul class="social__list">
