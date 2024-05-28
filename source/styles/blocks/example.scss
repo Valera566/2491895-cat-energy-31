@@ -239,7 +239,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 80px;
-    padding: 0 95px;
+    padding: 0 110px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -247,7 +247,6 @@
   .example__wrapper {
     grid-column: 1 / 2;
     margin-bottom: 75px;
-    margin-left: 15px;
   }
 
   .example__text {
@@ -257,13 +256,13 @@
   .example__list {
     grid-column: 1 / -1;
     padding-top: 69px;
-    padding-bottom: 55px;
+    padding-bottom: 53px;
   }
 
   .example__price {
     grid-column: 1 / -1;
     flex-direction: row;
-    gap: 63px;
+    gap: 65px;
     padding: 0;
   }
 
@@ -273,11 +272,14 @@
   }
 
   .example__title {
-    margin-left: 15px;
     padding-bottom: 146px;
   }
 
   .example__caption {
     background-color: #f2f2f2;
+  }
+
+  .example__value {
+    padding-top: 14px;
   }
 }

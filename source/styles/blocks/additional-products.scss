@@ -226,7 +226,7 @@
     display: grid;
     grid-template-columns: 1fr minmax(190px, 245px);
     column-gap: 80px;
-    padding: 0 92px 96px 111px;
+    padding: 0 110px 96px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -271,7 +271,7 @@
 
   .additional-products__description {
     padding-top: 10px;
-    padding-left: 3px;
+    padding-left: 4px;
   }
 
   .additional-products__price {
@@ -298,13 +298,14 @@
   .additional-products__text {
     text-align: center;
     gap: 46px;
-    padding-top: 12px;
+    padding-top: 13px;
 
     &::before {
       content: "";
       position: static;
       width: 80px;
       height: 83px;
+      margin-left: 43px;
     }
   }
 }

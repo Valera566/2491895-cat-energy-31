@@ -153,7 +153,7 @@
 @media (min-width: $desktop-width) {
   .advantages {
     padding-left: 110px;
-    padding-top: 78px;
+    padding-top: 72px;
     padding-bottom: 69px;
     border-bottom: none;
     max-width: 1440px;
@@ -162,7 +162,7 @@
 
   .advantages__list {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 80px;
   }
 

@@ -167,7 +167,7 @@
 
   .programs__item {
     grid-template-columns: auto 1fr;
-    padding: 41px 55px 55px 52px;
+    padding: 41px 55px 63px 52px;
 
     &--slim::before {
       grid-column: 1 / 2;
@@ -185,6 +185,7 @@
       height: 100px;
       margin: 0;
       margin-right: 47px;
+      margin-top: 3px;
     }
 
 
@@ -193,13 +194,14 @@
     }
 
     &--pro .programs__title {
-      padding-top: 30px;
+      padding-top: 33px;
       padding-right: 10px;
     }
 
     &--pro .programs__description {
-      padding-top: 40px;
+      padding-top: 33px;
       padding-left: 19px;
+      padding-bottom: 17px;
     }
 
     &--pro .programs__link {
@@ -215,8 +217,8 @@
   .programs__description {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    padding-top: 35px;
-    padding-bottom: 27px;
+    padding-top: 38px;
+    padding-bottom: 33px;
   }
 
   .programs__link {
