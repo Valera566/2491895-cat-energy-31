@@ -9,7 +9,8 @@
   display: grid;
   grid-template-columns: auto 1fr;
   background-color: #f2f2f2;
-  padding: 21px 28px 18px 20px;
+  padding: 21px 28px 22px 20px;
+  position: relative;
 
   &--slim::before {
     content: "";
@@ -23,12 +24,20 @@
 
   &--pro::before {
     content: "";
+    position: absolute;
     display: block;
+    top: 24px;
+    left: 12px;
     background-image: url("../../icons/stack.svg#cat-pro");
     background-repeat: no-repeat;
     width: 67px;
     height: 50px;
     margin-right: 11px;
+  }
+
+  &--pro .programs__title {
+    margin-left: 71px;
+    padding-bottom: 8px;
   }
 }
 
@@ -54,7 +63,7 @@
 .programs__link {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 17px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -64,7 +73,7 @@
   color: $base-black;
   grid-column: 1 / -1;
   justify-self: start;
-  padding-top: 15px;
+  padding-top: 18px;
 
   &::after {
     content: "";
@@ -97,25 +106,29 @@
 
   .programs__item {
     grid-template-columns: 1fr auto;
-    padding: 77px 63px 53px 52px;
+    padding: 77px 63px 63px 52px;
 
     &--slim::before {
       margin: 0;
       grid-column: 2 / 3;
       grid-row: 1 / 4;
       width: 200px;
-      height: 200px;
+      height: 214px;
       margin-left: 53px;
     }
 
     &--pro::before {
-      margin: 0;
+      position: static;
       grid-column: 2 / 3;
       grid-row: 1 / 4;
       width: 268px;
       height: 200px;
-      margin-left: 19px;
-      margin-right: -34px;
+      margin: 14px -34px 0 19px;
+    }
+
+    &--pro .programs__title {
+      margin-left: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -131,7 +144,7 @@
     line-height: 24px;
     border: 0;
     padding-top: 24px;
-    padding-bottom: 48px;
+    padding-bottom: 57px;
   }
 
   .programs__link {
@@ -145,16 +158,16 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(442px, 570px));
     gap: 80px;
-    padding: 0 110px;
+    padding-left: 110px;
     max-width: 1440px;
     margin: 0 auto;
   }
 
   .programs__item {
     grid-template-columns: auto 1fr;
-    padding: 41px 55px 55px 52px;
+    padding: 41px 55px 63px 52px;
 
     &--slim::before {
       grid-column: 1 / 2;
@@ -172,6 +185,28 @@
       height: 100px;
       margin: 0;
       margin-right: 47px;
+      margin-top: 3px;
+    }
+
+
+    &--pro {
+      padding: 44px 53px 59px 33px;
+    }
+
+    &--pro .programs__title {
+      padding-top: 33px;
+      padding-right: 10px;
+    }
+
+    &--pro .programs__description {
+      padding-top: 33px;
+      padding-left: 19px;
+      padding-bottom: 17px;
+    }
+
+    &--pro .programs__link {
+      padding-top: 3px;
+      padding-left: 20px;
     }
   }
 
@@ -182,8 +217,8 @@
   .programs__description {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    padding-top: 39px;
-    padding-bottom: 23px;
+    padding-top: 38px;
+    padding-bottom: 33px;
   }
 
   .programs__link {

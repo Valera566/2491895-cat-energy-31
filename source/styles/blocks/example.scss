@@ -16,6 +16,7 @@
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: $base-black;
   margin: 0;
@@ -52,6 +53,7 @@
 .example__price {
   font-family: $secondary-font;
   line-height: 20px;
+  text-transform: uppercase;
   color: $base-black;
   text-align: center;
   margin: 0;
@@ -123,7 +125,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .example__slider {
@@ -162,7 +164,7 @@
     justify-content: flex-start;
     gap: 43px;
     padding-top: 55px;
-    padding-bottom: 99px;
+    padding-bottom: 106px;
   }
 
   .example__item {
@@ -192,6 +194,7 @@
     top: 59px;
     min-width: 114px;
     padding: 0;
+    padding-top: 2px;
     background-color: $base-white;
   }
 
@@ -253,13 +256,13 @@
   .example__list {
     grid-column: 1 / -1;
     padding-top: 69px;
-    padding-bottom: 55px;
+    padding-bottom: 53px;
   }
 
   .example__price {
     grid-column: 1 / -1;
     flex-direction: row;
-    gap: 63px;
+    gap: 65px;
     padding: 0;
   }
 
@@ -269,10 +272,14 @@
   }
 
   .example__title {
-    padding-bottom: 145px;
+    padding-bottom: 146px;
   }
 
   .example__caption {
     background-color: #f2f2f2;
+  }
+
+  .example__value {
+    padding-top: 14px;
   }
 }

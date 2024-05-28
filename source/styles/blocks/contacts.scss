@@ -16,13 +16,12 @@
   line-height: 20px;
   font-style: normal;
   text-align: left;
-  width: 50%;
 }
 
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding: 25px 23px 26px 20px;
 }
 
 .contacts__wrapper--dark {
@@ -72,8 +71,9 @@
     background-color: $base-white;
     top: 95px;
     left: 110px;
-    gap: 87px;
+    gap: 45px;
     z-index: 1;
+    min-width: 565px;
   }
 
   .contacts__address {

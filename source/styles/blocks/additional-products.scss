@@ -7,7 +7,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   border-bottom: 1px solid $base-border;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   &:first-child {
     border-top: 1px solid $base-border;
@@ -23,10 +23,11 @@
 .additional-products__title {
   font-family: $secondary-font;
   font-size: 24px;
+  font-weight: 400;
   line-height: 24px;
   color: $base-black;
   margin: 0;
-  padding-bottom: 36px;
+  padding-bottom: 34px;
   position: relative;
   width: fit-content;
   background-color: $base-white;
@@ -48,6 +49,7 @@
 .additional-products__name {
   font-family: $secondary-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
@@ -113,7 +115,7 @@
   color: $base-white;
   text-align: center;
   margin: 0;
-  padding: 59px 60px 0;
+  padding: 59px 55px 0;
 
   &::before {
     content: "";
@@ -146,6 +148,8 @@
 
   .additional-products__item {
     grid-template-columns: 1fr repeat(2, auto);
+    align-items: start;
+    column-gap: 7px;
     box-shadow: 0 0 0 1px $base-border;
     padding: 26px 38px 28px;
     border-bottom: none;
@@ -172,6 +176,7 @@
     min-width: 86px;
     font-size: 16px;
     line-height: 20px;
+    padding-right: 3px;
   }
 
   .additional-products__button {
@@ -211,7 +216,7 @@
       width: 80px;
       height: 82px;
       top: 57px;
-      left: 77px;
+      left: 79px;
     }
   }
 }
@@ -230,6 +235,10 @@
     font-size: 40px;
     line-height: 40px;
     margin-left: 0;
+
+    &::before {
+      top: 18px;
+    }
   }
 
   .additional-products__list {
@@ -240,6 +249,7 @@
   .additional-products__item {
     display: grid;
     grid-template-columns: 1fr 232px 72px 244px;
+    align-items: center;
     gap: 13px;
     padding: 13px 0 18px;
     box-shadow: none;
@@ -251,23 +261,23 @@
   }
 
   .additional-products__name {
-    //min-width: 161px;
-    //margin-right: 164px;
     padding: 0;
   }
 
-  .additional-products__description {
-    //min-width: 131px;
-    //margin-right: 112px;
+  .additional-products__button {
+    width: 244px;
+    grid-column: 4 / 5;
   }
 
-  .additional-products__button {
-    //min-width: 244px;
-    grid-column: 4 / 5;
+  .additional-products__description {
+    padding-top: 10px;
+    padding-left: 4px;
   }
 
   .additional-products__price {
     text-align: left;
+    padding-top: 10px;
+    padding-left: 2px;
   }
 
   .additional-products__promo {
@@ -288,12 +298,14 @@
   .additional-products__text {
     text-align: center;
     gap: 46px;
+    padding-top: 13px;
 
     &::before {
       content: "";
       position: static;
       width: 80px;
       height: 83px;
+      margin-left: 43px;
     }
   }
 }

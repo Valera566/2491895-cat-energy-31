@@ -5,6 +5,7 @@
 .advantages__title {
   font-family: $secondary-font;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: $base-black;
   margin: 0;
@@ -77,10 +78,14 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 45px 30px 47px;
-    padding-top: 45px;
-    padding-left: 30px;
+    padding: 43px 30px 47px;
     border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 32px;
   }
 
   .advantages__list {
@@ -109,30 +114,33 @@
       line-height: 280px;
     }
 
+    &--leaf::after {
+      right: 100px;
+    }
+
     &--leaf::before {
+      background-image: url("../../icons/stack.svg#sheet-tablet");
       width: 80px;
       height: 80px;
     }
 
     &--glass::before {
+      background-image: url("../../icons/stack.svg#glass-tablet");
       width: 80px;
       height: 80px;
     }
 
     &--knife::before {
+      background-image: url("../../icons/stack.svg#fork-knife-tablet");
       width: 80px;
       height: 80px;
     }
 
     &--clock::before {
+      background-image: url("../../icons/stack.svg#clock-tablet");
       width: 80px;
       height: 80px;
     }
-  }
-
-  .advantages__title {
-    font-size: 60px;
-    line-height: 60px;
   }
 
   .advantages__text {
@@ -144,7 +152,9 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding: 71px 106px 69px 110px;
+    padding-left: 110px;
+    padding-top: 72px;
+    padding-bottom: 69px;
     border-bottom: none;
     max-width: 1440px;
     margin: 0 auto;
@@ -152,7 +162,8 @@
 
   .advantages__list {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 80px;
   }
 
   .advantages__title {
@@ -161,7 +172,11 @@
 
   .advantages__item {
     &::after {
-      right: 0;
+      right: -2px;
+    }
+
+    &--leaf::after {
+      right: 20px;
     }
   }
 }

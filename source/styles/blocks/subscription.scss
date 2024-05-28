@@ -5,6 +5,7 @@
 .subscription__title {
   font-family: $secondary-font;
   font-size: 24px;
+  font-weight: 400;
   line-height: 24px;
   color: $base-black;
   margin: 0;
@@ -84,7 +85,7 @@
   .subscription__text {
     font-size: 24px;
     line-height: 32px;
-    padding: 66px 68px 24px;
+    padding: 66px 68px 22px;
   }
 
   .subscription__form {
@@ -118,6 +119,19 @@
     font-size: 40px;
     line-height: 40px;
     margin-left: 110px;
+
+    &::before {
+      top: 17px;
+    }
+  }
+
+  .subscription__text {
+    padding-top: 70px;
+    padding-bottom: 24px;
+  }
+
+  .subscription__form {
+    margin-bottom: 104px;
   }
 
   .subscription__input {
