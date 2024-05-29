@@ -1,0 +1,141 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.cards__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  color: #222222;
+  width: 65%;
+  padding-bottom: 15px;
+}
+
+.cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-color-text;
+  grid-column: 2 / 3;
+  padding-bottom: 20px;
+}
+
+.cards__button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  grid-column: 1 / -1;
+  padding: 10px 0;
+
+  &:hover {
+    background-color: $base-hover-button;
+  }
+
+  &:active {
+    background-color: $base-hover-button;
+    color: rgb(255, 255, 255, 0.3);
+  }
+}
+
+.cards__link {
+  grid-row: 1 / 3;
+  justify-self: center;
+}
+
+.cards__image {
+  padding-top: 10px;
+}
+
+.cards__link-text {
+  text-decoration: none;
+}
+
+.cards__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.cards__value {
+  text-align: end;
+}
+
+@media (min-width: $tablet-width) {
+  .cards {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+    background-color: #f2f2f2;
+  }
+
+  .cards__link {
+    margin-top: -80px;
+  }
+
+  .cards__list {
+    grid-column: 1 / -1;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-bottom: 24px;
+  }
+
+  .cards__item {
+    border-bottom: 1px solid $base-border;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+  }
+
+  .cards__title {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 50px;
+  }
+
+  .cards__image {
+    padding-top: 29px;
+    padding-bottom: 39px;
+  }
+
+  .cards__image-big {
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards {
+    padding: 0 38px 40px;
+  }
+
+  .cards__list {
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+
+  .cards__link-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cards__title {
+    padding: 0;
+  }
+
+  .cards__image {
+    padding-bottom: 27px;
+  }
+
+  .cards__image-big {
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+}

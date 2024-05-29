@@ -1,0 +1,227 @@
+.programs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.programs__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: #f2f2f2;
+  padding: 21px 28px 22px 20px;
+  position: relative;
+
+  &--slim::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 53px;
+    margin-right: 20px;
+  }
+
+  &--pro::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 24px;
+    left: 12px;
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 50px;
+    margin-right: 11px;
+  }
+
+  &--pro .programs__title {
+    margin-left: 71px;
+    padding-bottom: 8px;
+  }
+}
+
+.programs__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $base-black;
+  margin: 0;
+  padding-top: 9px;
+}
+
+.programs__description {
+  color: $base-color-text;
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programs__link {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: $base-black;
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding-top: 18px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-repeat: no-repeat;
+    mask-size: 32px 12px;
+    mask-position: 0 50%;
+    background-color: $base-black;
+  }
+
+
+  &:hover::after,
+  &:focus-visible::after {
+    mask-image: url("../../icons/stack.svg#arrow-hover");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  .programs__item {
+    grid-template-columns: 1fr auto;
+    padding: 77px 63px 63px 52px;
+
+    &--slim::before {
+      margin: 0;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      width: 200px;
+      height: 214px;
+      margin-left: 53px;
+    }
+
+    &--pro::before {
+      position: static;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      width: 268px;
+      height: 200px;
+      margin: 14px -34px 0 19px;
+    }
+
+    &--pro .programs__title {
+      margin-left: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 0;
+  }
+
+  .programs__description {
+    grid-column: 1 / 2;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0;
+    padding-top: 24px;
+    padding-bottom: 57px;
+  }
+
+  .programs__link {
+    grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
+    gap: 25px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    grid-template-columns: repeat(2, minmax(442px, 570px));
+    gap: 80px;
+    padding-left: 110px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .programs__item {
+    grid-template-columns: auto 1fr;
+    padding: 41px 55px 63px 52px;
+
+    &--slim::before {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100px;
+      height: 106px;
+      margin: 0;
+      margin-right: 62px;
+    }
+
+    &--pro::before {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 134px;
+      height: 100px;
+      margin: 0;
+      margin-right: 47px;
+      margin-top: 3px;
+    }
+
+
+    &--pro {
+      padding: 44px 53px 59px 33px;
+    }
+
+    &--pro .programs__title {
+      padding-top: 33px;
+      padding-right: 10px;
+    }
+
+    &--pro .programs__description {
+      padding-top: 33px;
+      padding-left: 19px;
+      padding-bottom: 17px;
+    }
+
+    &--pro .programs__link {
+      padding-top: 3px;
+      padding-left: 20px;
+    }
+  }
+
+  .programs__title {
+    padding-top: 36px;
+  }
+
+  .programs__description {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding-top: 38px;
+    padding-bottom: 33px;
+  }
+
+  .programs__link {
+    grid-row: 3 / 4;
+  }
+}
