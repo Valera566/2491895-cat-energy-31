@@ -19,6 +19,11 @@
   min-width: 320px;
 }
 
+picture,
+source {
+  display: contents;
+}
+
 .intro__title {
   font-size: 36px;
   line-height: 36px;
@@ -154,6 +159,7 @@
   }
 
   .intro__image {
+    align-self: start;
     grid-column: 2 / 3;
     grid-row: 1 / 7;
     width: 552px;

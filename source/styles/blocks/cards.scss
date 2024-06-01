@@ -33,6 +33,7 @@
   line-height: 20px;
   grid-column: 1 / -1;
   padding: 10px 0;
+  align-self: end;
 
   &:hover {
     background-color: $base-hover-button;

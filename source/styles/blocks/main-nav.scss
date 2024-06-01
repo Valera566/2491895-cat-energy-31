@@ -49,6 +49,10 @@
   .main-nav--nojs .main-nav__list {
     position: static;
   }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
